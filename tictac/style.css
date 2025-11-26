@@ -1,0 +1,130 @@
+/* ---------- GLOBAL ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0e0a27, #2c2860, #1f1f3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.container {
+    text-align: center;
+    padding: 28px;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 45px rgba(0, 238, 255, 0.22);
+    animation: fadeIn 1s ease;
+}
+
+/* ---------- TITLES ---------- */
+.title {
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #00eaff;
+    text-shadow: 0 0 18px #00eaff;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.75;
+    margin-bottom: 22px;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- BOARD ---------- */
+.board {
+    width: 330px;
+    height: 330px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    font-weight: bold;
+    color: #00f2ff;
+    box-shadow: 0 0 18px rgba(0, 242, 255, 0.35);
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    background: rgba(0, 255, 255, 0.18);
+}
+
+/* ---------- BUTTONS ---------- */
+.controls button {
+    padding: 12px 22px;
+    margin: 10px;
+    border: none;
+    border-radius: 14px;
+    background: #00eaff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 18px #00eaff;
+}
+
+.controls button:hover {
+    background: #00c2d8;
+    transform: translateY(-3px);
+    box-shadow: 0 0 22px #00eaff;
+}
+
+/* ---------- GAME STATUS ---------- */
+.status {
+    margin-top: 18px;
+    font-size: 1.22rem;
+    text-shadow: 0 0 10px #ffffff80;
+}
+
+/* ---------- SIGNATURE ---------- */
+.signature {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    font-size: 14px;
+    opacity: 0.9;
+    letter-spacing: 1.6px;
+    color: #00eaff;
+    text-shadow: 0 0 14px #00eaff;
+    font-weight: 600;
+}
+
+.signature span {
+    color: #fff;
+    text-shadow: 0 0 12px #ffffff;
+    font-weight: 700;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(22px); }
+    to { opacity: 1; transform: translateY(0); }
+}

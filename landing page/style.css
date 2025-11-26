@@ -1,0 +1,198 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #add8e6; /* Light blue background */
+    color: #0b0b0b; /* Dark text for better contrast */
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 22px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    transition: 0.25s ease-in-out;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px 60px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.55);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e4e4e4;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #b3e6ff, #d0f0ff); /* Light blue gradient */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    padding-top: 120px;
+}
+
+.hero h1 {
+    font-size: 66px;
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 520px;
+    margin: 22px 0 32px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #00d4ff;
+    color: #111;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+    padding: 120px 60px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+/* Services Section */
+.section.dark {
+    background: #c2e9ff; /* Light blue variant */
+    color: black;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+}
+
+.service-card {
+    width: 300px;
+    padding: 38px;
+    background: #e1f5ff; /* Light soft blue */
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    transition: 0.3s ease-in-out;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #007b9e;
+}
+
+.service-card p {
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 22px 38px rgba(0,0,0,0.25);
+    border-color: #00d4ff;
+}
+
+/* Footer */
+footer {
+    background: #9ed8ff;
+    padding: 25px;
+    text-align: right;
+}
+
+.tejas-sign {
+    color: #000;
+    opacity: 0.75;
+    margin-right: 22px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    header {
+        padding: 15px 25px;
+    }
+
+    header.scrolled {
+        padding: 10px 25px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 0 25px;
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .section {
+        padding: 100px 25px;
+    }
+}

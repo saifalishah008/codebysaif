@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffb6c1, #ffdee9); /* Light Pink Gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card */
+.container {
+    width: 360px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 22px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.45);
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    transition: 0.3s ease;
+}
+
+/* Time Display */
+.display {
+    font-size: 2.4rem;
+    margin-bottom: 22px;
+    padding: 16px;
+    background: rgba(0,0,0,0.40);
+    border-radius: 14px;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.18);
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.buttons button {
+    width: 80px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.20);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    transition: 0.25s ease;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.buttons button:hover {
+    background: rgba(255,255,255,0.38);
+    transform: scale(1.10);
+}
+
+/* Lap List */
+#laps li {
+    background: rgba(0,0,0,0.50);
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.28);
+}
+
+/* Footer Credit */
+.credit {
+    text-align: center;
+    font-size: 17px;
+    color: #e6e6e6;
+    font-weight: 500;
+    margin-top: auto;
+    padding-bottom: 20px;
+    opacity: 0.9;
+}
+
+.credit span {
+    color: #ffdf6b;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 220, 90, 0.85);
+}

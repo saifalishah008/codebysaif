@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f3f7fa; /* Light background */
+  color: #000000;       /* Dark text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 45px 0;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0077cc; /* Slightly darker blue for light theme */
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 4px rgba(0, 119, 204, 0.4);
+}
+
+/* Main Card */
+.container {
+  width: 90%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 0 28px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, button {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.08); /* Light inputs */
+  color: #000;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input[type="datetime-local"] {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Calendar icon */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(0); /* Make icon dark */
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  background: #00a8ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(0, 168, 255, 0.4);
+}
+
+button:hover {
+  background: #0083cc;
+  box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);
+}
+
+/* Task List */
+ul {
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #00aa77;
+}
+
+/* Task Buttons */
+.task-controls button {
+  background: rgba(0, 0, 0, 0.08);
+  color: #000;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.task-controls button:hover {
+  background: #00a8ff;
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 168, 255, 0.6);
+}
+
+/* Signature */
+.signature {
+  margin-top: 28px;
+  text-align: right;
+  font-size: 14px;
+  color: #0077cc;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
